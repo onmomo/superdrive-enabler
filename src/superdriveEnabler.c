@@ -6,7 +6,7 @@
 #include <string.h>
 
 
-void superdrive_enabler (const char *device)
+void superdriveEnabler (const char *device)
 {
     int fd;
     sg_io_hdr_t IO_hdr;
