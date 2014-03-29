@@ -6,7 +6,7 @@
 #include <string.h>
 
 
-void superdriveEnabler (const char *device)
+void superdriveEnabler(const char *device)
 {
     int fd;
     sg_io_hdr_t IO_hdr;
@@ -30,7 +30,7 @@ void superdriveEnabler (const char *device)
         IO_hdr.cmdp = magic;
         IO_hdr.sbp = sbuf;
         IO_hdr.timeout = 1000;
-        if ( ioctl(fd, SG_IO, &IO_hdr) < 0) {
+        if (ioctl(fd, SG_IO, &IO_hdr) < 0) {
             fprintf(stderr, "Error initialising MBA SuperDrive.\n");
             return;
         }
@@ -41,6 +41,6 @@ void superdriveEnabler (const char *device)
 
 int main(int argc, const char* argv[])
 {
-    superdrive_enabler(argv[1]);
+    superdriveEnabler(argv[1]);
     return 0;
 }
