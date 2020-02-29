@@ -46,6 +46,7 @@ OBJS := $(patsubst %.$(C),%.$(OBJ),$(wildcard $(SOURCE_PATH)*.$(C)))
 	$(CCMD) -c $(CPPFLAGS) $(CXXFLAGS) $< $(OBJFLAG)$@
 
 all: $(OBJS)
+	@mkdir -p $(OUTPUT_PATH)
 	@echo Linking...
 	$(CCMD) $(LDFLAGS) $^ $(LIBS) $(EXEFLAG) $(EXE)
 
