@@ -4,7 +4,7 @@
 #include <scsi/sg.h>
 #include <stdio.h>
 #include <string.h>
-
+#include <unistd.h>
 
 void superdriveEnabler(const char *device)
 {
