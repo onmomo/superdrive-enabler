@@ -15,4 +15,4 @@ and execute it with the SuperDrive device path
 ./superdriveEnabler /dev/sr0
 ```
 
-For a detailed usage and automation guide, check: http://techtalk.christian-moser.ch/wordpress/?p=517
+For a detailed usage and automation guide, check my [blog](https://www.cmos.blog/use-apples-usb-superdrive-with-linux/)https://www.cmos.blog/use-apples-usb-superdrive-with-linux/ please 
